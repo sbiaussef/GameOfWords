@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>drag & drop game</title>
+<script type="text/javascript" src="index.js">
+</script>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button onclick="loadedValue()">PLAY NOW</button>
+    <table>
+      <tr>
+        <td><div id="question1" draggable="true" ondragstart="drag(event)"></div></td>
+        <td><div id="question2" draggable="true" ondragstart="drag(event)"></div></td>
+        <td><div id="question3" draggable="true" ondragstart="drag(event)"></div></td>
+        <td><div id="question4" draggable="true" ondragstart="drag(event)"></div></td>
+      </tr>
+
+      <tr>
+        <td><div id="suggestion1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><div id="suggestion2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><div id="suggestion3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><div id="suggestion4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>
